@@ -10,7 +10,7 @@ const mySingleton = (function() {
 		}
 
 		return {
-			publicMethod: function() {
+			publicMethod() {
 				return "The public can see me!"
 			},
 			publicProperty: "I am public",

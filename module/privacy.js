@@ -8,7 +8,7 @@ var basketModule = (function(){
 	
 	return {
 		// add times to our basket
-		addItem: (values) => {
+		addItem(values) {
 			basket.push(values)
 			console.log("added: " + values.item + " - " + values.price)
 		},
@@ -22,7 +22,7 @@ var basketModule = (function(){
 		doSomething: doSomethingPrivate,
 
 		// get the total value of items in the basket
-		getTotal: function() {
+		getTotal() {
 			let itemCount = this.getItemCount(),
 					total = 0;
 

@@ -6,15 +6,15 @@ var myModule = {
 		language: "en"
 	},
 
-	myMethod: function() {
+	myMethod() {
 		console.log("Where in the world is Plato?")
 	},
 
-	myMethod2: function() {
+	myMethod2() {
 		console.log("Caching is: " + (this.myConfig.useCaching ? "enabled" : "disabled"));
 	},
 
-	myMethod3: function(newConfig) {
+	myMethod3(newConfig) {
 		if(typeof newConfig === "object") {
 			this.myConfig = newConfig;
 			console.log(this.myConfig.language);
