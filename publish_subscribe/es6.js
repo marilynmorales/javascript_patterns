@@ -40,6 +40,10 @@ class PubSub {
         }
         return this;
     }
+    getAllTopics() {
+        console.log(this.topics)
+        return this.topics;
+    }
 }
 
 let pubsub = new PubSub()
@@ -55,5 +59,6 @@ pubsub.publish("inbox/newMessage", {
     sender: "hi@marilynmorales.com",
     body: "Hey again!"
 })
-
-pubsub.unsubscribe("inbox/newMessage", "Hello are you still here?")
+pubsub.getAllTopics()
+pubsub.unsubscribe(subscription)
+pubsub.getAllTopics()
